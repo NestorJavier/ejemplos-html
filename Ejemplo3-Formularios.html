@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formularios
+        </title>
+    </head>
+    <body>
+        <h1>
+            Ejemplo Formularios
+        </h1>
+        <form>
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id = "Nombre" required name = "Nombre"  placeholder="Escribe tu nombre">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" id = "Apellidos" name = "Apellidos" placeholder="Escribe tus Apellidos">
+            </div>
+            <div>
+                <label for="">Masculino</label>
+                <input type="radio" name ="genero" value = "M">
+                <label for="">Femenino</label>
+                <input type="radio" name ="genero" value = "F">
+                <label for="">Otro</label>
+                <input type="radio" name ="genero" value = "O">
+            </div>
+            <div>
+                <label>Correo</label>
+                <input type="email" name="Correo">
+                <label for="">Contraseña</label>
+                <input type="password" name="Contraaseña">
+            </div>
+            <div>
+                <label>Cumpleaños</label>
+                <select name="Dia">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="Mes">
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abri">Abri</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                <select name="Año">
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                </select>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
