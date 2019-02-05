@@ -1,23 +1,131 @@
 <!DOCTYPE html>
-<html lang = "es">
-    <head>
-        <title>Documentos</title>
-    </head>
-    <body>
-        <h1>Documentos y Estructuras HTML</h1>
+<html lang="es">
 
-        <h2>Declaración del tipo de documento (DOCTYPE)</h2>
-        <h2>Documento (html) </h2>
-        
+<head>
+    <title>Documentos</title>
+</head>
 
+<body>
+    <h1>Documentos y Estructuras HTML</h1>
 
-        <a  href="https://validator.w3.org/check?uri=referer"
+    <h2>¿Que es HTML?</h2>
 
-                target="_blank">
+    <p>
+        HTML significa Lenguaje de Marcado para Hipertextos (HyperText Markup Language) y este es usado para
+        estructurar información al nivel más básico en una página web, determina el contenido de esta a través de
+        etiquetados (Markup), los siguients son algunas de las etiquetas, no son todas, pero son de las mas usadas.
+        <br>
+        <br>
 
-                <img src="https://www.w3.org/Icons/valid-xhtml10"
+        &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
+        &lt;div&gt;, &lt;span&gt;, &lt;img&gt;
+    </p>
+    <ol>
+        <li><a href="#ANATOMIA"> Anatomia de un documento HTML</a></li>
+        <li><a href="#HEADINGS"> Encabezados</a></li>
+        <li><a href="#DIVS"> Divs</a></li>
+        <li><a href="#ATRIBUTOS"> Atributos</a></li>
+        <li><a href="#TEXTO"> Texto y estilo del mismo</a></li>
+        <li><a href="#SALTOLINEA"> Saltos de linea</a></li>
+        <li><a href="#LISTAS"> Listas ordenadas y no odrdenadas</a></li>
+        <li><a href="#IMAGENES"> Imagenes</a></li>
+        <li><a href="#VIDEOS"> Videos</a></li>
 
-                alt="Valid XHTML 1.0!"></a>
-    </body>
-    
+    </ol>
+
+    <h2 id="ANATOMIA">Anatomia de un documento HTML</h2>
+    <p>
+        La anatomia de un documento de html esta compuesta como ya se menciono anteriormente, de etiquetas, estas
+        etiquetas son metadatos de la infomación que se esta desplegando en la pagina web, es decir, estas etiquetas
+        representan información de la información que se esta desplegando en la pagina.
+        <br>
+        <br>
+        las etiquetas mas importantes dentro de <strong>html</strong>
+        son las siguientes:
+        <br>
+        <ol>
+            <li>&lt;!DOCTYPE&gt;:</li>
+            <p>Esta etiqueta indica la versión del documento de html, esta información le indica al navegador como es
+                que debe leer el documento.</p>
+
+            <li>&lt;html&gt;:</li>
+            <p>representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.</p>
+
+            <li>&lt;head&gt;:</li>
+            <p>provee información general acerca del documento, incluyendo su título y enlaces a scripts y hojas de
+                estilos.</p>
+
+            <li>&lt;title&gt;:</li>
+            <p>Dentro de esta etiqueta se indica el nombre del documento el cual va a aparecer en la pestaña del
+                navegador.</p>
+
+            <li>&lt;body&gt;:</li>
+            <p>Representa el contenido de un documento HTML. Sólo puede haber un elemento &lt;body&gt; en un documento.</p>
+
+        </ol>
+        <p>En la siguiente imagen se muestra de manera general como se estructuran los elemntos anteriormente
+            mencionados </p>
+        <img src="./EstructuraHTML.png" alt="Anatomia de un html">
+
+    </p>
+    <h2 id="HEADINGS">Encabezados</h2>
+    <p>h1, h2, h3, h4, h5, h6. Estos son los encabezados que se usan en html y estos se usan al igual que en otro tipo
+        de documentos como por ejemplo los periodicos.
+    </p>
+    <br>
+    <img src="https://blogs.gonzaga.edu/gsbstudents/files/2017/01/New-York-Times-sm.jpeg" alt="Diario The New York Times"
+        height="300">
+
+    <p>Donde h1 seria "MEN WALK ON MOON" y h2 seria "ASTRONAUTS LAND ON PLAIN; COLLECT ROCKS, PLANT FLAG",
+        y asi de forma decendente, estos se usan para dar una idea a grnades rasgos de la información que se visualiza.
+    </p>
+    <h4>Sintaxis:</h4>
+    <p>&lt;h1&gt; "Encabezado" &lt;/h1&gt;</p>
+    <p>&lt;h2&gt; "Encabezado" &lt;/h2&gt;</p>
+    <p>&lt;h3&gt; "Encabezado" &lt;/h3&gt;</p>
+
+    <h2 id="DIVS">Divs</h2>
+    <p>Este elemnto se usa para dividir bloques de codigo, esto para aplicarles estilos o realizar operaciones.</p>
+
+    <h2 id="ATRIBUTOS">Atributos</h2>
+    <p>Estos son valores adicionales que configuran los elementos o ajustan su comportamiento de diversas formas para
+        cumplir los criterios de los usuarios. por ejemplo el atributo de un encabezado seria de la siguiente manera</p>
+
+    <p>&lt;h3&gt; Encabezado id="ATRIBUTOS" &lt;/h3&gt;
+        <br>
+        <br>
+        donde "id" es un atributo el cual asigna un identificador a ese encabezado en especifico.
+    </p>
+
+    <h2 id="TEXTO">Texto y estilo del mismo</h2>
+    <p>
+        El elemento p (párrafo) es el apropiado para distribuir el texto en párrafos. Sus etiquetas son: &lt;p&gt; y
+        &lt;/p&gt;
+    </p>
+
+    <h2 id="SALTOLINEA">Saltos de linea</h2>
+    <p>El elemento HTML line break &lt;br&gt; produce un salto de línea en el texto, y este solo requiere una etiqueta
+        de apertura.</p>
+
+    <h2 id="LISTAS">Listas ordenadas y no odrdenadas</h2>
+    <p>Las listas son importantes para ordenar información de una mejor manera, en html existen las listas ordenadas
+        (&lt;ol&gt; &lt;/ol&gt;) en las cuales los elementos dentro de la lista estan numerados de menor a mayor y
+        listas no ordenadas (&lt;ul&gt; &lt;/ul&gt;) en las cuales los elementos estan resaltados con viñetas,
+        para agregar elementos a estas listas solo se tiene que agregar la etiqueta (&lt;li&gt; &lt;/li&gt;) por cada
+        uno de los elementos dentro de la lista.
+        <a href="/Ejemplo1-Texto.html" target="_blank">Ejemplo de Listas</a>.
+    </p>
+    <h2 id="IMAGENES">Imagenes</h2>
+    <p>Las imagenes pueden ser incluidas en un archivo de html mediante la etiqueta &lt;img src="" alt=""&gt; donde el
+        atributo <strong>src</strong> es la fuente de la imagen la cual puede estar contenida dentro de la misma pagina web o en otra pagina, el atributo <strong>alt</strong> sirve como un texto asociado a la imagen, este texto puede ser una descripción de la misma.</p>
+    <h2 id="VIDEOS">Videos</h2>
+        <p>
+                Esta es la etiqueta que es usada para incluir un video en html &lt;video src=""&gt;&lt;/video src=""&gt;, como se puede observar esta etiqueta es bastante parecida a la de imagenes, ya que contiene tambien el atributo <strong>src</strong> el que, de igual manera indica la fuente del video. 
+        </p>
+    <p><a href="./index.html">Home</a></p>
+    <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+
+        <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!"></a>
+</body>
+
 </html>

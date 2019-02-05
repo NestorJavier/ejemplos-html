@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+
+    <h2>Tablas en html</h2>
+
+    <p>
+        Las tablas en HTML son una de las formas de
+        mostrar información dentro del sitio web, 
+        esta información pueden ser: 
+        <ul>
+            <li>Precios</li>
+            <li>Puntuaciones</li>
+            <li>Facturas</li>
+            <li>etc...</li>
+        </ul>
+
+        <br>
+        <br>
+    </p>
+    <ol>
+        <li><a href="#CREAR">       Crear Tabla                         </a></li>
+        <li><a href="#RENGLONES">   Renglones                           </a></li>
+        <li><a href="#INFO">        Agregar información                 </a></li>
+        <li><a href="#ENCABEZADO">  Encabezado de columnas              </a></li>
+        <li><a href="#BORDES">      Bordes                              </a></li>
+        <li><a href="#SPANNING">    Expanción de renglones y columnas   </a></li>
+        <li><a href="#BODY">        Cuerpo                              </a></li>
+    </ol>
+
+    <h2 id="CREAR">     Crear Tabla                      </h2>
+        <p>
+            Para crear una tabla solo hace falta Agregar
+            las etiquetas 
+            <br>
+            <strong>
+                &lt;table&gt;
+                <br>
+                <br>
+
+                &lt;/table&gt;
+            </strong>
+            <br>
+            para este punto solo hemos especificado la creación de la tabla, 
+            pero esto no es sufuciente ya que tambien debemos agregar
+            renglones y celdas, si no hacemos esto nuestra tabla no sera visible.
+
+        </p>
+    <h2 id="RENGLONES"> Renglones                        </h2>
+        <p>En este codigo ya hemos agrgado renglones (&lt;tr&gt; &lt;/tr&gt;) y celdas (&lt;td&gt; &lt;/td&gt;) y como
+             se puede observar existe un anidamineto en el cual el elemnto mas importante es la etiqueta 
+             coorrespondiente a la tabla es la de mayor jerarquia le sigue la etiqueta de renglon y al
+            final el elemento menor perteneciente a la celda.</p>
+        <p>
+            <br>
+            <strong>
+                &lt;table&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                &lt;/table&gt;
+            </strong>
+                <br>
+        </p>
+    <h2 id="INFO">      Agregar información              </h2>
+        <p>
+            Una vez realizado lo anterior nuestra tabla esta lista para agregar la
+             información que vamos a mostrar en nuestro sitio web, esta
+              información puede ser de caulquier tipo, texto, imagenes, video, y lo unico que se tiene 
+              que hacer para agregar esta información es insertarla 
+              entre las etiquetas de coorresponden a las celdas.
+        </p>        
+
+        <table>
+            <tr>
+                <td>
+                    233445
+                </td>
+                <td>
+                    Luis Sanchez
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    267819
+                </td>
+                <td>
+                    Fernando Carmona
+                </td>
+                </tr>
+        </table>
+
+        <p>
+            El de arriba es un ejemplo de como se muestra la información en una tablas.
+        </p>
+    <h2 id="ENCABEZADO">Encabezado de columnas           </h2>
+        <p>
+            En este punto ya hemos insertado informción en 
+            nuestra tabla, pero aun falta darle un formato 
+            que le de mas sentido a la información que estamos 
+            mostrando en esa tabla, parte de este formato tiene 
+            que ver con el encabezado de las columnas el cual 
+            contextualiza la información que tratamos de mostrar
+        </p>
+        <table>
+            <tr>
+                <th>Clave</th>
+                <th>Alumno</th>
+            </tr>
+            <tr>
+                <td>
+                    233445
+                </td>
+                <td>
+                    Luis Sanchez
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    267819
+                </td>
+                <td>
+                    Fernando Carmona
+                </td>
+                </tr>
+        </table>
+        <p>
+            la siguiente imagen muestra como es que el encabezado de la columna es agregado, 
+            usando la etiqueta <strong>th</strong> la cual tiene la particularidad de resaltar en 
+            negritas el texto que contiene.
+        </p>
+        <img src="./tablasHead.png" alt="">
+    <h2 id="BORDES">    Bordes                           </h2>
+        <p>
+            Para visualizar de forma mas clara la información tambien es posible
+            agregar bordes a nuestras tablas agregando el
+             atributo <strong>border</strong> a nuestra etiqueta <strong>table</strong>,
+              dicho atributo se tiene que igualar al ancho deseado
+              en los bordes. 
+        </p>
+        <table border="2">
+                <tr>
+                    <th>Clave</th>
+                    <th>Alumno</th>
+                </tr>
+                <tr>
+                    <td>
+                        233445
+                    </td>
+                    <td>
+                        Luis Sanchez
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        267819
+                    </td>
+                    <td>
+                        Fernando Carmona
+                    </td>
+                    </tr>
+            </table>
+    <h2 id="SPANNING">  Expanción de renglones y columnas</h2>
+            <p>
+                Esto es de utilidad cuando se requiere que 
+                una celda o un renglon sean de un tamaño mayor y lo 
+                que se tiene que hacer es agregar los atributos 
+                <strong>rowspan</strong> o <strong>colspan</strong>
+                a la etiqueta de la celda (<strong>td</strong>).
+
+            </p>
+
+    <h2 id="BODY">      Cuerpo                           </h2>
+            <p>
+                El elemento <strong>tbody</strong> 
+                nos sirve para seccionar los renglones 
+                de una tabla y de esta manera manteer separada la información
+                cuya tematica es distinta.
+            </p>
+    </h2>
+    
+    <p><a href="./index.html">Home</a></p>
+    <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+
+        <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!"></a>
+</body>
+
+</html>
