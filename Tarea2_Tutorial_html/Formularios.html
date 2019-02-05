@@ -2,28 +2,34 @@
 <html lang="es">
 
 <head>
-    <title>Tablas</title>
+    <title>Formularios</title>
 </head>
 
 <body>
-    <h1>Tablas</h1>
+    <h1>Formularios</h1>
 
-    <h2>Tablas en html</h2>
+    <h2>Formularios en html</h2>
 
     <p>
-        Las tablas en HTML son una de las formas de
-        mostrar información dentro del sitio web, 
-        esta información pueden ser: 
-        <ul>
-            <li>Precios</li>
-            <li>Puntuaciones</li>
-            <li>Facturas</li>
-            <li>etc...</li>
-        </ul>
-
-        <br>
-        <br>
+        Los formularios en HTML son como en Windows una de las
+         forma de capturar datos, estos datos pueden ser para 
+         aplicaciones como buscar un trabajo, una cuenta bancaria.
     </p>
+    <img src="./form.png" alt="ejemplo formulario">
+    <p>
+        En el ejemplo de arriba se muestra la estructura basica de 
+        un form donde el atributo <strong>"action"</strong> indica a 
+        donde sera enviada la información recolecatdad del formulario.
+        <br>
+        El elemento forma también puede contener elemento hijos
+        estos pueden ser cabeceras (h1, h2, ..., etc) o incluso parrafos,
+        pero tambien puede contener elementos de tipo <strong>&lt;input&gt;</strong>
+        estos elementos son los que nos permiten capturar la información deseada.
+
+    </p>
+
+    <br>
+    <br>
     <ol>
         <li><a href="#TEXTO">           Texto de Entrada                         </a></li>
         <li><a href="#ETIQUETA">        Etiquetas                         </a></li>
@@ -39,9 +45,73 @@
     </ol>
 
     <h2 id="TEXTO">         Texto de Entrada                        </h2>
+        <p>
+            Como ya se mencionó el elemento <strong>&lt;input&gt;</strong> es el 
+            que nos permite generar campos para posteriormente ser llenados 
+            por  el usuario, unos de los mas comunes son los de texto.
+        </p>
+        <img src="./inputtexto.png" alt="ejemplo de input de texto">
+
+        <p>
+            En el ejemplo de arriba se observa como se emplea el elemento 
+            <strong>&lt;input&gt;</strong> el cual tiene un atributo <strong>type</strong>, este atributo indica que tipo de 
+            <strong>input</strong> se va a usar, en este caso es un 
+            elemento de texto.
+        </p>
+
     <h2 id="ETIQUETA">      Etiquetas                               </h2>
+        <p>
+            En el ejemplo anterior vimos como es que podemos crear una entrada de texto
+            pero no tenemos ningun elemento que explique para que es la entrada de texto.     
+            Para esto se usa el elemento <strong>&lt;label&gt;</strong>, este elemento debe 
+            esatar asociado a uno o mas elementos de entrada.
+        </p>
+        <img src="./label.png" alt="label ejemplo">
+        <p>
+            en el ejemplo de arriba se observa como el atributo <strong>for</strong>
+            es usado para relacionar la etiqueta con la entrada de texto gracias a que
+            <strong>for</strong> hace referencia al identificador de la entrada de texto.
+        </p>
+
+
     <h2 id="CONTRASEÑAS">   Contraseñas                             </h2>
+
+        <p>
+            Para ingresar contraseñas existe otro tipo de <strong>&lt;input&gt;</strong>
+            la cual es basicamente igual a la entrada de texto
+            solo que esta tiene la particularidad de ocultar el texto que se 
+            esta ingresando en la caja.  
+        </p>
+
+        <img src="./password.png" alt="especificacion de password">
+
+        <p>El ejemplo de arriba nos despliega lo siguiente:</p>
+
+        <img src="./passwordEj.png" alt="passwordEJ">
+
     <h2 id="NUMEROS">       Numeros                                 </h2>
+        <p>
+            ¿Que tal si queremos que nuestro <strong>&lt;input&gt;</strong> solo 
+            reciba numeros?
+            <br>
+            Afortunadamente los formularios de html tambien nos facilitan esa herramienta, la cual
+            solo permite al usuario ingresar numeros.
+            Para esto nuestro atributo <strong>type</strong> 
+            debe ser igual a <strong>"number"</strong>.
+        </p>
+        <img src="./nemeros.png" alt="ej.Numeros">
+
+        <p>
+            En el ejemplo de arriba se muestra como se emplea 
+            el elemento <strong>input</strong> con numeros, 
+            este elemento contiene un par de botones con los cuales 
+            se le permite al usuario incrementar o decrementar el 
+            valor que ha de ingresar, el atributo <strong>step</strong>
+            es el que permite establecer cuanto se aumenta el valor cuando 
+            se preciona los botones antes mencionados.
+        </p>
+
+
     <h2 id="CHECKBOX">      Checkbox                                </h2>
     <h2 id="RADIO">         Radio                                   </h2>
     <h2 id="DROPD">         Dropdown list                           </h2>
